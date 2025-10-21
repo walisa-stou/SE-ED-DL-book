@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deploying the CNN Model with the Flask Framework: WALISA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>CNN Image Classifier</h2>
+        <button id="uploadBtn">Upload and Predict</button>
+        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+        <div id="imagePreview"></div>
+        <p id="predictionResult"></p>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
